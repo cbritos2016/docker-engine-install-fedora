@@ -28,6 +28,8 @@ sudo docker run hello-world
 
 sudo dnf -y install docker-compose
 
+sudo wget https://raw.githubusercontent.com/docker/compose/$(docker-compose --version | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')/contrib/completion/bash/docker-compose -O /etc/bash_completion.d/docker-compose
+
 #FILE: docker-compose.yml
 #
 #version: '2'
